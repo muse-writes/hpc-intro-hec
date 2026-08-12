@@ -108,7 +108,6 @@ default_config: episodes/files/customization/HPCC_MagicCastle_slurm/_config_opti
 # You could use the configuration option below but, rather than edit this file,
 # the build system listens to the environment variable
 # "HPC_CARPENTRY_CUSTOMIZATION" which you set to the path to your customisations
-# (the env var takes precedence; this key is the fallback when the env var is unset)
 
 custom_config: episodes/files/customization/LAN_HEC_slurm/_config_options.yml
 
