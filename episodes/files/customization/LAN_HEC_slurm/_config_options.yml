@@ -1,10 +1,10 @@
-# Customization for Newcastle University's Comet Cluster
+# Customization for Lancaster University's HEC cluster
 # Use the HPC_CARPENTRY_CUSTOMIZATION variable to invoke these:
 #
-# > HPC_CARPENTRY_CUSTOMIZATION=episodes/files/customization/NCL_Comet_slurm/_config_options.yml
+# > HPC_CARPENTRY_CUSTOMIZATION=episodes/files/customization/LAN_HEC_slurm/_config_options.yml
 # > export HPC_CARPENTRY_CUSTOMIZATION
 ---
-snippets: episodes/files/customization/NCL_Comet_slurm/snippets
+snippets: episodes/files/customization/LAN_HEC_slurm/snippets
 
 local:
   prompt: "[you@laptop:~]$"
@@ -14,7 +14,7 @@ remote:
   name: "HEC"
   host_id: "FIXME_HEC"
   login: "wayland-2022.hec.lancs.ac.uk"
-  host: "wayland-2022"
+  host: "wayland-2022.hec.lancs.ac.uk"
   node: "comp04-13"
   location: "wayland-2022.hec.lancs.ac.uk"
   user: "user"
@@ -22,7 +22,7 @@ remote:
   shebang: "#!/bin/bash"
 
   fs:
-    home: "/home/hpc/42/user"
+    home: "/home/hpc/42"
 
   module_python3:
     python: "miniforge/20251003"
