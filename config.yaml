@@ -75,6 +75,7 @@ episodes:
   - 17-parallel.Rmd
   - 18-resources.Rmd
   - 19-responsibility.Rmd
+  - 20-luna.Rmd
 
 # Information for Learners
 learners:

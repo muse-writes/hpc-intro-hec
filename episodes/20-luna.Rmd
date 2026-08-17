@@ -1,0 +1,27 @@
+---
+title: Luna for Data Storage
+teaching: 15
+exercises: 0
+---
+
+```{r, echo=FALSE}
+# Source the external configuration script
+source("load_config.R")
+```
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Connect to Luna, both from the HEC and your own computer.
+- Learn how to safely store and back-up research data using Luna.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How do I safely store and back up research data to Luna?
+- How do I transfer large amounts of data directly from the HEC, as opposed to
+  having to use my own PC?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Temp
