@@ -168,7 +168,7 @@ tell us the important flags we might want to use when launching it.
 Create a submission file, requesting one task on a single node, then launch it.
 
 ```{r, echo=FALSE, results='asis'}
-snippets('parallel/one-task.Rmd')
+snippets("parallel/one-task.Rmd")
 ```
 
 As before, use the `r config$sched$name` status commands to check whether your job

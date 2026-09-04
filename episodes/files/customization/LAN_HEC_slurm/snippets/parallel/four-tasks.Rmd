@@ -12,9 +12,13 @@
 `r config$sched$comment` -n 4
 
 # Load the computing environment we need
-# (mpi4py and numpy are in SciPy-bundle)
+# (mpi4py and numpy are in conda forge repo)
 module load `r config$remote$modules$python`
-module load SciPy-bundle
+
+# When installing Python modules it's best to do so in a venv.
+conda create -p $global_storage/mpi-test
+source activate $global_storage/mpi-test
+conda install mpi4py
 
 # Execute the task
 mpiexec amdahl

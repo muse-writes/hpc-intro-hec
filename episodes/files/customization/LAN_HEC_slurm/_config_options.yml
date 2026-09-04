@@ -11,7 +11,7 @@ local:
   shebang: "#!/usr/bin/env bash"
 
 remote:
-  name: "HEC"
+  name: "the HEC"
   host_id: "FIXME_HEC"
   login: "wayland-2022.hec.lancs.ac.uk"
   host: "wayland-2022.hec.lancs.ac.uk"
@@ -23,6 +23,9 @@ remote:
 
   fs:
     home: "/home/hpc/42"
+
+  modules:
+    python: "miniforge"
 
   module_python3:
     python: "miniforge/20251003"
