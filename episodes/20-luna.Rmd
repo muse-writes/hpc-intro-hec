@@ -1,0 +1,73 @@
+---
+title: LUNA for Data Storage
+teaching: 15
+exercises: 15
+---
+
+```{r, echo=FALSE}
+# Source the external configuration script
+source("load_config.R")
+```
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Connect to LUNA, both from the HEC and your own computer.
+- Learn how to safely store and back-up research data using LUNA.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How do I safely store and back up research data to LUNA?
+- How do I transfer large amounts of data directly from the HEC, as opposed to
+  having to use my own PC?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Data Storage on LUNA
+LUNA is a large, frequently backed up, storage system for research data. It's
+project- or research group-dependent, so you may or may not have a directory on
+LUNA. If you do, however, you may want to consider archiving, backing up, or
+synchronising your research data for long-term storage. You can do this directly
+from the HEC as well.
+
+Let's try accessing LUNA from your personal computer first. Open your file
+browser.
+
+On windows, you can just use double backslashes in your file explorer to access
+a networked file system via SMB:
+
+```
+\\luna\<faculty>\<dept>\<research group>\user-research
+```
+
+On linux you will need to specify the full domain name and protocol when
+mounting the file system.
+
+```
+smb://luna.lancs.ac.uk/<faculty>/<dept>/<research group>/user-research
+```
+
+FIXME
+From the command line:
+
+```bash
+mkdir /mnt/smb_share
+sudo mount -t cifs -o username=your_username,password=your_password //luna.lancs.ac.uk/<faculty>/<dept>/<research group>/user-research /mnt/smb_share
+```
+
+::: challenge
+
+Copy a local file to your temporary LUNA storage.
+
+:::: solution
+
+TODO
+
+::::
+
+:::
+
+## How to Access LUNA from the HEC
+
+## Data Synchronisation and Backups

@@ -302,8 +302,8 @@ This means that an authenticated user can send a file to a cluster machine,
 but a cluster machine cannot retrieve files from a user's machine or the
 open Internet.
 
-Try downloading the file directly. Note that it may well fail, and that's
-OK!
+Try downloading the file directly. On the HEC, you *can* access the wider
+internet, but this is not universal.
 
 :::::::::::::::  solution
 

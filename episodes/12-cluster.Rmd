@@ -343,6 +343,34 @@ Some nodes may have larger amount of memory, or specialized resources such as
 *Graphics Processing Units* (GPUs).
 :::
 
+## Scratch and Storage Directories
+
+At the moment, when you log into the HEC, you land in your home directory, but
+you're limited to 10GB worth of storage. Luckily, you have an allowance of
+storage in other parts of the file system. These can be seen by running the
+command
+
+```bash
+gpfsquota
+```
+
+The storage directory mentioned here is located at
+`/storage/hpc/<number>/user`, and contains 200GB of long-term storage. It is
+primarily intended for large programs rather than long-term data storage, which
+should be backed up to your own computer.
+
+The scratch directory located in `/scratch/hpc/<number>/user` has a massive
+10TB quota, but the key difference is it is intended as a workspace for batch
+jobs. Files older than four weeks will be deleted automatically.
+
+Both of these can be helpfully accessed via `cd $global_storage` and `cd
+$global_scratch`. They can also be symlinked to your home directory with
+
+```bash
+ln -s $global_storage ~/storage
+ln -s $global_scratch ~/scratch
+```
+
 With all of this in mind, we will now cover how to talk to the cluster's
 scheduler, and use it to start running our scripts and programs!
 

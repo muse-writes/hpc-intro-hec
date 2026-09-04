@@ -33,13 +33,13 @@ life_cycle: 'beta'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries-incubator/hpc-intro'
+source: 'https://github.com/muse-writes/hpc-intro'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+contact: 'd.k.johnson@lancaster.ac.uk'
 
 # Navigation ------------------------------------------------
 #
@@ -75,6 +75,7 @@ episodes:
   - 17-parallel.Rmd
   - 18-resources.Rmd
   - 19-responsibility.Rmd
+  - 20-luna.Rmd
 
 # Information for Learners
 learners:
@@ -109,7 +110,7 @@ default_config: episodes/files/customization/HPCC_MagicCastle_slurm/_config_opti
 # the build system listens to the environment variable
 # "HPC_CARPENTRY_CUSTOMIZATION" which you set to the path to your customisations
 
-# custom_config: episodes/files/customization/Ghastly_Mistakes/_config_options.yml
+custom_config: episodes/files/customization/LAN_HEC_slurm/_config_options.yml
 
 carpentry_description: Lesson Description
 url: 'https://carpentries-incubator.github.io/hpc-intro/'
