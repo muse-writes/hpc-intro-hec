@@ -1,0 +1,26 @@
+```bash
+`r config$remote$prompt` module avail | less
+```
+
+```output
+--------------------------------------- /usr/shared_apps/Nmodules/apps ---------------------------------------
+abaqus/2019           cplex/12.5.1              gromacs/2020          octopus/test         vim/8.1
+adf/test              cplex/12.9                gromacs/cpu-test      OpenBUGS/3.2.3       vtune/21.0u4
+amber/18              cplex/22.11               gulp/6.3.4            OpenFOAM/1912        wine/2.0.3
+amber/test            crystal/23                gurobi/9.0.0          OpenFOAM/2106        wrf/test
+anaconda2/2.5.0       CST/2022u5                highs/1.5.3           openmolcas/test      xed/5.2.2
+anaconda2/4.2.0       CST/2024u5                hisat2/test           paml/4.8
+anaconda3/4.1.1       dalton/2018.2             idl/8.9               paraview/5.5.2
+anaconda3/4.3.1       dalton/2018.2-large       ImageMagick/7.0.9     patchdock/test
+anaconda3/2018.12     dalton/2020.0-large       intel-python/2.7      perl/5.12.3
+anaconda3/2018.12-tf  delft3d/6.04.02           intel-python/3.6      pflotran/201708
+anaconda3/2019.07     delft3d/test              JAGS/4.3.0            poreblazer/4.0
+anaconda3/2020.11     delft3d/test-fm           JAGS/4.3.2            pyqsub/test
+anaconda3/2022.05     dl-poly-classic/1.9       julia/1.0.1           R/3.5.1
+anaconda3/2023.09     dl-poly/4.06              julia/1.6.3           R/3.5.1-gcc
+
+[removed most of the output here for clarity]
+```
+
+Use `module keyword key1 key2 ...` to search for all possible modules matching
+any of the "keys".

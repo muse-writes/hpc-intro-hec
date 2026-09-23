@@ -1,0 +1,27 @@
+```bash
+`r config$remote$prompt` ls /usr/shared_apps/packages/miniforge3-20251003/bin
+
+```
+
+```output
+2to3          bzmore       icu-config     kswitch           pydoc              tput
+2to3-3.12     captoinfo    icuexportdata  ktutil            pydoc3             tqdm
+activate      clear        icuinfo        kvno              pydoc3.12          tset
+adig          compile_et   idle3          lz4               python             unlz4
+ahost         conda        idle3.12       lz4c              python3            unzstd
+archspec      conda2solv   infocmp        lz4cat            python3.1          uuclient
+bsdcat        conda-env    infotocap      makeconv          python3.12         wheel
+bsdcpio       cph          installcheck   mamba             python3.12-config  wish
+bsdtar        c_rehash     jsondiff       mamba-package     python3-config     wish8.6
+bsdunzip      curl-config  jsonpatch      mergesolv         repo2solv          x86_64-conda-linux-gnu-ld
+bunzip2       deactivate   jsonpointer    ncurses6-config   reset              xml2-config
+bzcat         derb         k5srvutil      ncursesw6-config  sclient            xmlcatalog
+bzcmp         distro       kadmin         nghttp            sim_client         xmllint
+bzdiff        dumpsolv     kdestroy       nghttpd           sqlite3_analyzer   zstd
+bzegrep       genbrk       keyctl         nghttpx           tabs               zstdcat
+bzfgrep       gencfu       kinit          normalizer        tclsh              zstdgrep
+bzgrep        gencnval     klist          openssl           tclsh8.6           zstdless
+bzip2         gendict      kpasswd        pip               testsolv           zstdmt
+bzip2recover  genrb        krb5-config    pip3              tic
+bzless        gss-client   ksu            pkgdata           toe
+```

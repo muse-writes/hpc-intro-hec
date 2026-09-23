@@ -46,6 +46,9 @@ document sent along when you register for an account. Take a look at these
 resources, and search for the software you plan to use: somebody might have
 written up guidance for getting the most out of it.
 
+For the HEC, these can be found on the [HEC documentation
+website](https://lancaster-hec.readthedocs.io/en/main/intro.html).
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 A convenient way of figuring out the resources required for a job to run
