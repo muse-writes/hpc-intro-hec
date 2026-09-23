@@ -303,7 +303,7 @@ but a cluster machine cannot retrieve files from a user's machine or the
 open Internet.
 
 Try downloading the file directly. On the HEC, you *can* access the wider
-internet, but this is not universal.
+internet from login nodes, but this is not universal.
 
 :::::::::::::::  solution
 
