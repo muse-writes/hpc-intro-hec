@@ -94,23 +94,20 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
-# CONFIGURING FOR YOUR SYSTEM
+# CONFIGURING FOR YOUR SYSTEM (sandpaper >= 0.21.0 native customization)
+#
+# Episodes may reference `config$...` values and `snippets()` placeholders,
+# which sandpaper resolves from the following folders within
+# episodes/files/customization/ (each folder contains _config_options.yml
+# and an optional snippets/ subdirectory):
 
-# For this lesson we use a default configuration which should have all
-# configuration and snippet items referenced in the lesson.
-# (snippets are in a subdirectory alongside the configuraton file)
-default_config: episodes/files/customization/HPCC_MagicCastle_slurm/_config_options.yml
+# Base customization: platform-neutral defaults (also used as fallback)
+workbench_base_customization: HPCC_MagicCastle_slurm
 
-# Optionally, you can then override this default with (a subset of) customized
-# values that more closely match your system
-# (custom snippets should be in a subdirectory alongside the configuraton file, you can
-# also override none or as many of those as you like)
-
-# You could use the configuration option below but, rather than edit this file,
-# the build system listens to the environment variable
-# "HPC_CARPENTRY_CUSTOMIZATION" which you set to the path to your customisations
-
-custom_config: episodes/files/customization/LAN_HEC_slurm/_config_options.yml
+# Overlay customization for our system (overrides base values).
+# Can be overridden per-build with the WORKBENCH_OVERLAY_CUSTOMIZATION
+# environment variable (e.g. as a GitHub Actions repository variable).
+workbench_overlay_customization: LAN_HEC_slurm
 
 carpentry_description: Lesson Description
 url: 'https://muse-writes.github.io/hpc-intro-hec/'
