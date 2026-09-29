@@ -33,7 +33,7 @@ life_cycle: 'beta'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/muse-writes/hpc-intro'
+source: 'https://github.com/muse-writes/hpc-intro-hec'
 
 # Default branch of your lesson
 branch: 'main'
@@ -113,6 +113,6 @@ default_config: episodes/files/customization/HPCC_MagicCastle_slurm/_config_opti
 custom_config: episodes/files/customization/LAN_HEC_slurm/_config_options.yml
 
 carpentry_description: Lesson Description
-url: 'https://carpentries-incubator.github.io/hpc-intro/'
+url: 'https://muse-writes.github.io/hpc-intro-hec/'
 analytics: carpentries
 lang: en
