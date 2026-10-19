@@ -412,7 +412,7 @@ these options are specified on the command-line when starting a job. To submit
 a job that uses 2 CPUs for instance, we could use the following command:
 
 ```bash
-user@wayland-2022:~$ srun -n 2 echo "This job will use 2 CPUs."
+user@wayland-2022:~$ srun -n 2 -p parallel echo "This job will use 2 CPUs."
 ```
 
 ```output
@@ -438,6 +438,7 @@ You should be presented with a bash prompt. Note that the prompt will likely
 change to reflect your new location, in this case the compute node we are
 logged on. You can also verify this with `hostname`.
 
+~~~{=comment}
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Creating remote graphics
@@ -458,6 +459,7 @@ installed, you can ensure X11 forwarding within interactive jobs by using the
 `srun --x11 --pty bash`.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+~~~
 
 When you are done with the interactive job, type `exit` to quit your session.
 
