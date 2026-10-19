@@ -379,7 +379,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Using shared resources responsibly</h1>
-        <p>Last updated on 2026-10-13 |
+        <p>Last updated on 2026-10-19 |
 
         <a href="https://github.com/muse-writes/hpc-intro-hec/edit/main/episodes/19-responsibility.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -492,7 +492,7 @@ node?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Building software, creating directories, and unpacking software are
 common and acceptable &gt; tasks for the login node: options #2
@@ -513,19 +513,17 @@ friendly sysadmin for advice.</p>
 report it to the system staff (usually via the helpdesk) for them to
 investigate.</p>
 </section><section><h2 class="section-heading" id="test-before-scaling">Test Before Scaling<a class="anchor" aria-label="anchor" href="#test-before-scaling"></a></h2>
-<hr class="half-width"><p>Remember that you are generally charged for usage on shared systems.
-A simple mistake in a job script can end up costing a large amount of
-resource budget. Imagine a job script with a mistake that makes it sit
+<hr class="half-width"><p>A simple mistake in a job script can end up costing a large amount of
+a shared resource. Imagine a job script with a mistake that makes it sit
 doing nothing for 24 hours on 1000 cores or one where you have requested
 2000 cores by mistake and only use 100 of them! This problem can be
 compounded when people write scripts that automate job submission (for
 example, when running the same calculation or analysis over lots of
-different parameters or files). When this happens it hurts both you (as
-you waste lots of charged resource) and other users (who are blocked
-from accessing the idle compute nodes). On very busy resources you may
-wait many days in a queue for your job to fail within 10 seconds of
-starting due to a trivial typo in the job script. This is extremely
-frustrating!</p>
+different parameters or files). When this happens it hurts both you and
+other users, who are blocked from accessing the idle compute nodes. On
+very busy resources you may wait many days in a queue for your job to
+fail within 10 seconds of starting due to a trivial typo in the job
+script. This is extremely frustrating!</p>
 <p>Most systems provide dedicated resources for testing that have short
 wait times to help you avoid this issue.</p>
 <div id="test-job-submission-scripts-that-use-large-amounts-of-resources" class="callout">
@@ -692,7 +690,7 @@ would be the best way to transfer them to the HEC?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>
 <code>scp</code> will recursively copy the directory. This works,
@@ -792,8 +790,8 @@ before transferring.</li>
   "url": "https://muse-writes.github.io/hpc-intro-hec/19-responsibility.html",
   "identifier": "https://muse-writes.github.io/hpc-intro-hec/19-responsibility.html",
   "dateCreated": "2017-03-24",
-  "dateModified": "2026-10-13",
-  "datePublished": "2026-10-13"
+  "dateModified": "2026-10-19",
+  "datePublished": "2026-10-19"
 }
 
   </script><script>
